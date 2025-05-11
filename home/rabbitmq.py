@@ -12,7 +12,7 @@ def publish_message(message):
     channel.basic_publish(exchange='',
                           routing_key='hello',
                           body=message)
-    print(f" [x] Sent {message}")
+    # print(f" [x] Sent {message}")
     connection.close()
 
 
